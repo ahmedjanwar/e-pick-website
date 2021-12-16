@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-Pick</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="fjs.js"></script>
+    <script src="app2.js"></script>
+</head>
+
+<body>
+    <img src="pictures/logo.png" class="logo_index" width="" height="50">
+    <div class="search">
+        
+        <br><br>
+        <label style="color: black;"> Option</label>
+        <select name="choce" id="op">
+            <option value="Customer_Id">Customer Id</option>
+            <option value="Order_Id">Order Id</option>
+            
+          </select>
+          <br><br>
+        <label style="color: black;">Search </label> 
+        <input type="text" name="search" id="search">
+        <button onclick="proc()">search</button>
+        
+    </div>
+    <div class="mainDiv" id="q" hidden = hidden>
+    <h1 style="text-align: center;">Information</h1>
+    <div>
+        <table class="infoTable">
+            <thead>
+               <tr>
+                    
+                </tr>
+            </thead>
+            <tbody id="infoTbody"></tbody>
+        </table>
+    <div>
+        <h1 class="hh1">product list</h1>
+    </div>
+
+    </div>
+        <div class="container" id="cont" >
+            <!--<h1 class="hh1">product list</h1>-->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Mark</th>
+                        <th>Code</th>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+
+    </div><br>
+    <div class="lastbtn">
+        <button id="markAsReady" class="button" onclick="readyCheck()">mark as ready</button>
+        <button id="print" onclick="print()" class="button" hidden="hidden">print</button>
+        
+    </div>
+</div>
+</body>
+
+</html>
